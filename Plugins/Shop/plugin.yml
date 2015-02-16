@@ -1,0 +1,21 @@
+name: Shop
+main: MineBlock\Shop\Shop
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ shop:
+  permission: mineblock.shop.cmd
+  description: Shop - Command
+  usage: /Shop <Add|Del|Reset>
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.shop.cmd:
+    description: Shop - Command
+   mineblock.shop.block:
+    description: Shop - Block

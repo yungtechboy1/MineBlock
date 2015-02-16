@@ -1,0 +1,20 @@
+name: MaxHealth
+main: MineBlock\MaxHealth\MaxHealth
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ maxhealth:
+  permission: mineblock.maxhealth.cmd
+  description: MaxHealth - Command
+  usage: /MaxHealth <Set|Default>
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.maxhealth.cmd:
+    default: true
+    description: MaxHealth - Command

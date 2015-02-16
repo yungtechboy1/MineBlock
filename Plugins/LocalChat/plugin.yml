@@ -1,0 +1,21 @@
+name: LocalChat
+main: MineBlock\LocalChat\LocalChat
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ localchat:
+  permission: mineblock.localchat.cmd
+  description: LocalChat - Command
+  usage: /LocalChat <Local>
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.localchat.cmd:
+    description: LocalChat - Command
+   mineblock.localchat.hear:
+    description: LocalChat - Hear the chat of far place

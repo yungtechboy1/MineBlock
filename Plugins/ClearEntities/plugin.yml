@@ -1,0 +1,19 @@
+name: ClearEntities
+main: MineBlock\ClearEntities\ClearEntities
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ clearentities:
+  permission: mineblock.clearentities.cmd
+  description: ClearEntities - Command
+  usage: /ClearEntities <All|Item|Arrow|Mob> <View|Clear>
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.clearentities.cmd:
+    description: ClearEntities - Command

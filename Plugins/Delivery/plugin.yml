@@ -1,0 +1,20 @@
+name: Delivery
+main: MineBlock\Delivery\Delivery
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ delivery:
+  permission: mineblock.delivery.cmd
+  description: Delivery - Command
+  usage: /Delivery <PlayerName> <ItemID> <Amount>
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.delivery.cmd:
+    default: true
+    description: Delivery - Command

@@ -1,0 +1,20 @@
+name: SortInventory
+main: MineBlock\SortInventory\SortInventory
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ SortInventory:
+  permission: mineblock.sortinventory.cmd
+  description: SortInventory - Command
+  usage: /SortInventory <View|Clear>
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock - Command
+  children:
+   mineblock.sortinventory.cmd:
+    default: true
+    description: SortInventory - Command

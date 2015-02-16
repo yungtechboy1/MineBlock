@@ -1,0 +1,19 @@
+name: Gun
+main: MineBlock\Gun\Gun
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ gun:
+  permission: mineblock.gun.cmd
+  description: Gun - Command
+  usage: /Gun <Gun|Bullet|Cool>
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.gun.cmd:
+    description: Gun - Command

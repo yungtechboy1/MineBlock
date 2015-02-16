@@ -1,0 +1,19 @@
+name: Grenade
+main: MineBlock\Grenade\Grenade
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ grenade:
+  permission: mineblock.grenade.cmd
+  description: Grenade - Command
+  usage: /Grenade <Grenade|Cool>
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.grenade.cmd:
+    description: Grenade - Command

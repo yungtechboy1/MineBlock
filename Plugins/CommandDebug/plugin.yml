@@ -1,0 +1,19 @@
+name: CommandDebug
+main: MineBlock\CommandDebug\CommandDebug
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ commanddebug:
+  permission: mineblock.commanddebug.cmd
+  description: CommandDebug - Command
+  usage: /CommandDebug <Add|Del|Reset|List>
+ 
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.commanddebug.cmd:
+    description: CommandDebug - Command

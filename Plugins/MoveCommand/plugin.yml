@@ -1,0 +1,19 @@
+name: MoveCommand
+main: MineBlock\MoveCommand\MoveCommand
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ move:
+  permission: mineblock.move.cmd
+  description: Move - Command
+  usage: /Move <PlayerName> <X> <Y> <Z>
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.move.cmd:
+    description: Move - Command

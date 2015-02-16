@@ -1,0 +1,14 @@
+name: WorldInventory
+main: MineBlock\WorldInventory\WorldInventory
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.worldinventory.change:
+    default: true
+    description: WorldInventory - Auto change the inventory

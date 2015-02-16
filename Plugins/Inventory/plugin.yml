@@ -1,0 +1,19 @@
+name: Inventory
+main: MineBlock\Inventory\Inventory
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ inventory:
+  permission: mineblock.op.inventory
+  description: MineBlock - [Inventory] - OP
+  usage: /Inventory <View|Armor|Take|Clear>
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock - OP
+  children:
+   mineblock.op.inventory:
+    description: MineBlock - [Inventory] - OP

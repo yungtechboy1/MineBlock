@@ -1,0 +1,19 @@
+name: JoinCount
+main: MineBlock\JoinCount\JoinCount
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ joincount:
+  permission: mineblock.joincount.cmd
+  description: JoinCount - Command
+  usage: /JoinCount <View|Rank|Clear|AllClear>
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.joincount.cmd:
+    description: JoinCount - Command

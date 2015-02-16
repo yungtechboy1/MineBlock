@@ -1,0 +1,71 @@
+name: MineFarm
+main: MineBlock\MineFarm\MineFarm
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ myfarm:
+  permission: mineblock.minefarm.myfarm.cmd
+  description: MineFarm - MyFarm - Command
+  usage: /MyFarm <Move|Buy|Visit|Invite|Share|Kick|List|Message|Here>
+ minefarm:
+  permission: mineblock.minefarm.minefarm.cmd
+  description: MineFarm - MineFarm - Command
+  usage: /MineFarm <Give|Move|Here|Distance|Size|Air|Auto|Sell|Price|Item|List|Reset>
+ money:
+  permission: mineblock.money.money.cmd
+  description: Money - Money - Command
+  usage: /Money <Me|View|Pay|Rank>
+ moneyop:
+  permission: mineblock.money.moneyop.cmd
+  description: Money - MoneyOP - Command
+  usage: /MoneyOP <Set|Give|Take|Clear|Default|Trim|Nick|OP>
+ shop:
+  permission: mineblock.shop.cmd
+  description: Shop - Command
+  usage: /Shop <Add|Del|Reset>
+ login:
+  permission: mineblock.login.cmd
+  description: Login - Login - Command
+  usage: /Login <Password>
+ register:
+  permission: mineblock.register.cmd
+  description: Login - Register - Command
+  usage: /Register <Pasrword> <Password>
+ loginop:
+  permission: mineblock.loginop.cmd
+  description: Login - LoginOP - Command
+  usage: /LoginOP <Del|Change|Clear|Trim>
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.minefarm.myfarm.cmd:
+    default: true
+    description: MineFarm - MyFarm - Command
+   mineblock.minefarm.minefarm.cmd:
+    description: MineFarm - MineFarm - Command
+   mineblock.minefarm.move:
+    description: MineFarm - Move
+   mineblock.minefarm.block:
+    description: MineFarm - Block
+   mineblock.money.money.cmd:
+    default: true
+    description: Money - Money - Command
+   mineblock.money.moneyop.cmd:
+    description: Money - MoneyOP - Command
+   mineblock.shop.cmd:
+    description: Shop - Command
+   mineblock.shop.block:
+    description: Shop - Block
+   mineblock.login.cmd:
+    default: true
+    description: Login - Login - Command
+   mineblock.register.cmd:
+    default: true
+    description: Login - Register - Command
+   mineblock.loginop.cmd:
+    description: Login - LoginOP - Command

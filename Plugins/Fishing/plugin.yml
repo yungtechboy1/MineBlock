@@ -1,0 +1,19 @@
+name: Fishing
+main: MineBlock\Fishing\Fishing
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ fishing:
+  permission: mineblock.fishing.cmd
+  description: Fishing - Command
+  usage: /Fishing <Fishing|Rod|Bait|Delay|Cool|Count|Fishs>
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.fishing.cmd:
+    description: Fishing - Command

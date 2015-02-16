@@ -1,0 +1,19 @@
+name: ViewLocation
+main: MineBlock\ViewLocation\ViewLocation
+version: MineBlock
+api: [1.4.0]
+author: MineBlock
+
+commands:
+ viewlocation:
+  permission: db.pl.viewlocation
+  description: MineBlock's ViewLocation - for Player
+  usage: /ViewLocation <PlayerName>
+
+permissions:
+ db.pl:
+  default: true
+  description: MineBlock's Plugins for Player
+  children:
+   db.pl.viewlocation:
+    description: MineBlock's ViewLocation- for Player

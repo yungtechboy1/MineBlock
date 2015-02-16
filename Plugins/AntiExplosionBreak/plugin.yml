@@ -1,0 +1,5 @@
+name: AntiExplosionBreak
+main: MineBlock\AntiExplosionBreak\AntiExplosionBreak
+versionBreak: MineBlock
+api: [1.6.0]
+author: MineBlock

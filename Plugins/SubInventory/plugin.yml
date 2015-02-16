@@ -1,0 +1,20 @@
+name: SubInventory
+main: MineBlock\SubInventory\SubInventory
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ subinventory:
+  permission: mineblock.subinventory.cmd
+  description: SubInventory - Command
+  usage: /SubInventory
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.subinventory.cmd:
+    default: true
+    description: SubInventory - Command

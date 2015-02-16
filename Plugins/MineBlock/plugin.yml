@@ -1,0 +1,24 @@
+name: MineBlock
+main: DeBePlugins\MineBlock\MineBlock
+version: DeBe
+api: [1.6.0]
+author: DeBe
+
+commands:
+ mineblock:
+  permission: debe.mineblock.cmd
+  description: MineBlock - Command
+  usage: /Mineblock <Add|Del|Set>
+
+permissions:
+ debe:
+  default: op
+  description: DeBePlugins
+  children:
+   debe.mineblock.cmd:
+    description: MineBlock - Command
+   debe.mineblock.place:
+    description: MineBlock - Block Place
+   debe.mineblock.break:
+    default: true
+    description: MineBlock - Block Break

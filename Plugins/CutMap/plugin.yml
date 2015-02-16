@@ -1,0 +1,19 @@
+name: CutMap
+main: MineBlock\CutMap\CutMap
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ cutmap:
+  permission: mineblock.op.cutmap
+  description: MineBlock - [CutMap] - OP
+  usage: /CutMap
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock - OP
+  children:
+   mineblock.op.cutmap:
+    description: MineBlock - [CutMap] - OP

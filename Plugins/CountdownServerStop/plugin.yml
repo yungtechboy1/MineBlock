@@ -1,0 +1,19 @@
+name: CountdownServerStop
+main: MineBlock\CountdownServerStop\CountdownServerStop
+version: MineBlock
+api: [1.4.0]
+author: MineBlock
+
+commands:
+ countdownserverstop:
+  permission: db.op.countdownserverstop
+  description: MineBlock's CountdownServerStop - for OP
+  usage: /CountdownServerStop <Time>
+
+permissions:
+ db.op:
+  default: op
+  description: MineBlock's Plugins for OP
+  children:
+   db.op.countdownserverstop:
+    description: MineBlock's CountdownServerStop- for OP

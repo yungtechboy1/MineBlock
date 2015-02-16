@@ -1,0 +1,5 @@
+name: ArrowShot
+main: MineBlock\ArrowShot\ArrowShot
+version: MineBlock
+api: [1.6.0]
+author: MineBlock

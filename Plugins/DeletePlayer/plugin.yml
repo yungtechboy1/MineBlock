@@ -1,0 +1,19 @@
+name: DeletePlayer
+main: MineBlock\DeletePlayer\DeletePlayer
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ deleteplayer:
+  permission: mineblock.deleteplayer.cmd
+  description: DeletePlayer - Command
+  usage: /DeletePlayer <PlayerName>
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.deleteplayer.cmd:
+    description: DeletePlayer - Command

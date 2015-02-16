@@ -1,0 +1,54 @@
+name: WorldManager
+main: MineBlock\WorldManager\WorldManager
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ worldmanager:
+  permission: mineblock.worldmanager.worldmanager.cmd
+  description: WorldManager - WorldManager - Command
+  usage: /WorldManager <Generate|Load|List>
+ worldprotect:
+  permission: mineblock.worldmanager.worldprotect.cmd
+  description: WorldManager - WorldProtect - Command
+  usage: /WorldProtect <Add|Del|Reset|List>
+ worldpvp:
+  permission: mineblock.worldmanager.worldpvp.cmd
+  description: WorldManager - WorldPVP - Command
+  usage: /WorldPVP <Add|Del|Reset|List>
+ worldinv:
+  permission: mineblock.worldmanager.worldinv.cmd
+  description: WorldManager - WorldInv- Command
+  usage: /WorldInv <Add|Del|Reset|List>
+ setspawn:
+  permission: mineblock.worldmanager.setspawn.cmd
+  description: WorldManager - SetSpawn - Command
+  usage: /SetSpawn <PlayerName>
+ spawn:
+  permission: mineblock.worldmanager.spawn.cmd
+  description: WorldManager - Spawn - Command
+  usage: /Spawn <WorldName>
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.worldmanager.worldmanager.cmd:
+    description: WorldManager - WorldManager - Command
+   mineblock.worldmanager.worldprotect.cmd:
+    description: WorldManager - WorldProtect - Command
+   mineblock.worldmanager.worldprotect.block:
+    description: WorldManager - WorldProtect - Block
+   mineblock.worldmanager.worldpvp.cmd:
+    description: WorldManager - WorldPVP - Command
+   mineblock.worldmanager.worldpvp.pvp:
+    description: WorldManager - WorldPVP - PVP
+   mineblock.worldmanager.worldinv.cmd:
+    description: WorldManager - WorldInv - Command
+   mineblock.worldmanager.setspawn.cmd:
+    description: WorldManager - SetSpawn - Command
+   mineblock.worldmanager.spawn.cmd:
+    default: true
+    description: WorldManager - Spawn - Command

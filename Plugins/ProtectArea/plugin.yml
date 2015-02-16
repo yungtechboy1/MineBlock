@@ -1,0 +1,19 @@
+name: ProtectArea
+main: MineBlock\ProtectArea\ProtectArea
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ protectarea:
+  permission: mineblock.op.protectarea
+  description: MineBlock - [ProtectArea] - OP
+  usage: /ProtectArea <Add|Del|Reset|List|Load>
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock - OP
+  children:
+   mineblock.op.protectarea:
+    description: MineBlock - [ProtectArea] - OP

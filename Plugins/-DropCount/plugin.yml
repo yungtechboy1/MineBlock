@@ -1,0 +1,19 @@
+name: DropCount
+main: MineBlock\DropCount\DropCount
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ dropcount:
+  permission: mineblock.dropcount.cmd
+  description: DropCount - Command
+  usage: /DropCount <Num1> <Num2>
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.dropcount.cmd:
+    description: DropCount - Command

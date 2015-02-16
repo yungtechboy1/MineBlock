@@ -1,0 +1,21 @@
+name: BanCraft
+main: MineBlock\BanCraft\BanCraft
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ bancraft:
+  permission: mineblock.bancraft.cmd
+  description: BanCraft - Command
+  usage: /BanCraft <Add|Del|Reset|List|Load>
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock - OP
+  children:
+   mineblock.bancraft.cmd:
+    description: BanCraft - Command
+   mineblock.bancraft.craft:
+    description: BanCraft - Craft

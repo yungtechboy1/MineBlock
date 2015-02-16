@@ -1,0 +1,5 @@
+name: Reboot
+main: MineBlock\Reboot\Reboot
+version: MineBlock
+api: [1.6.0]
+author: MineBlock

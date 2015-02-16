@@ -1,0 +1,5 @@
+name: AntiPvpCheat
+main: MineBlock\AntiPvpCheat\AntiPvpCheat
+version: MineBlock
+api: [1.6.0]
+author: MineBlock

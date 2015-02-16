@@ -1,0 +1,25 @@
+name: ShortCut
+main: MineBlock\ShortCut\ShortCut
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ shortcut:
+  permission: mineblock.shortcut.cmd
+  description: ShortCut - Command
+  usage: /ShortCut <Add|Del|Reset|List>
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.shortcut:
+    description: MineBlock - [ShortCut]
+    children:
+      mineblock.shortcut.cmd:
+       description: ShortCut - Command
+      mineblock.shortcut.use:
+       default: true
+       description: ShortCut - Use the shortcut

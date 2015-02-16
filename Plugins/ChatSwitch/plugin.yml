@@ -1,0 +1,20 @@
+name: ChatSwitch
+main: MineBlock\ChatSwitch\ChatSwitch
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ chatswitch:
+  permission: mineblock.chatswitch.cmd
+  description: ChatSwitch - Command
+  usage: /ChatSwitch
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.chatswitch.cmd:
+    default: true
+    description: ChatSwitch - Command

@@ -1,0 +1,19 @@
+name: CommandItem
+main: MineBlock\CommandItem\CommandItem
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ commanditem:
+  permission: mineblock.commanditem.cmd
+  description: CommandItem - Command
+  usage: /CommandItem <Add|Del|Reset|List>
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.commanditem.cmd:
+    description: CommandItem - Command

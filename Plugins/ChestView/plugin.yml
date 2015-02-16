@@ -1,0 +1,19 @@
+name: ChestView
+main: MineBlock\ChestView\ChestView
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ chestview:
+  permission: mineblock.chestview.cmd
+  description: ChestView - Command
+  usage: /ChestView
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.chestview.cmd:
+    description: ChestView - Command

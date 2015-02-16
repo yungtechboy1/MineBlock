@@ -1,0 +1,19 @@
+name: CommandLog
+main: MineBlock\CommandLog\CommandLog
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ commandlog:
+  permission: mineblock.commandlog.cmf
+  description: CommandLog - Command
+  usage: /CommandLog <View|Clear|AllClear>
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.commandlog.cmd:
+    description: CommandLog - Command

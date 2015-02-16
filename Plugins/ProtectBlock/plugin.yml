@@ -1,0 +1,21 @@
+name: ProtectBlock
+main: MineBlock\ProtectBlock\ProtectBlock
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ protectblock:
+  permission: mineblock.protectblock.cmd
+  description: ProtectBlock - Command
+  usage: /ProtectBlock <Add|Del|Reset|List>
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.protectblock.cmd:
+    description: ProtectBlock - Command
+   mineblock.protectblock.block:
+    description: ProtectBlock - Block

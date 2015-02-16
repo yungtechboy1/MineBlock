@@ -1,0 +1,5 @@
+name: CocoaBean
+main: MineBlock\CocoaBean\CocoaBean
+version: MineBlock
+api: [1.6.0]
+author: MineBlock

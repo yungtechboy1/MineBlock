@@ -1,0 +1,6 @@
+name: WorldGenerator
+main: MineBlock\WorldGenerator\WorldGenerator
+load: STARTUP
+api: [1.6.0]
+version: MineBlock
+author: MineBlock 

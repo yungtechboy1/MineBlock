@@ -1,0 +1,22 @@
+name: DamageBlock
+main: MineBlock\DamageBlock\DamageBlock
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ damageblock:
+  permission: mineblock.damageblock.cmd
+  description: DamageBlock - Command
+  usage: /DamageBlock <Add|Del|Reset|List>
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.damageblock.cmd:
+    description: DamageBlock - Command
+   mineblock.damageblock.inv:
+    default: off
+    description: DamageBlock - Invincibility fo DamageBlock

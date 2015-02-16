@@ -1,0 +1,27 @@
+name: Point
+main: MineBlock\Point\Point
+version: MineBlock
+api: [1.4.0]
+author: MineBlock
+
+commands:
+ point:
+  permission: mineblock.point.point.cmd
+  description: Point - Point - Command
+  usage: /Point <Me|View|Rank>
+  
+ pointop:
+  permission: mineblock.point.pointop.cmd
+  description: Point - PointOP - Command
+  usage: /PointOP <Set|Give|Take|Clear|OP|Nick>
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.point.point.cmd:
+    default: true
+    description: Point - Point - Command
+   mineblock.point.pointop.cmd:
+    description: Point - PointOP - Command

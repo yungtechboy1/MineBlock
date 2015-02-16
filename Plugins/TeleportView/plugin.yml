@@ -1,0 +1,19 @@
+name: TeleportView
+main: MineBlock\TeleportView\TeleportView
+version: MineBlock
+api: [1.4.0]
+author: MineBlock
+
+commands:
+ teleportview:
+  permission: db.pl.teleportview
+  description: MineBlock's TeleportView - Player
+  usage: /TeleportView
+
+permissions:
+ db.pl:
+  default: true
+  description: MineBlock's Plugins for Player
+  children:
+   db.pl.teleportview:
+    description: MineBlock's TeleportView - for Player

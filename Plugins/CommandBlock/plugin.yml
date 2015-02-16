@@ -1,0 +1,27 @@
+name: CommandBlock
+main: MineBlock\CommandBlock\CommandBlock
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ commandblock:
+  permission: mineblock.commandblock.cmd
+  description: CommandBlock - Command
+  usage: /CommandBlock <Add|Del|Reset>
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.commandblock.cmd:
+    description: CommandBlock - Command
+   mineblock.commandblock.block:
+    description: CommandBlock - Edit block
+   mineblock.commandblock.touch:
+    default: true
+    description: CommandBlock - Touch commandblock
+   mineblock.commandblock.push:
+    default: true
+    description: CommandBlock - Push commandblock

@@ -1,0 +1,33 @@
+name: Login
+main: MineBlock\Login\Login
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ login:
+  permission: mineblock.login.cmd
+  description: Login - Login - Command
+  usage: /Login <Password>
+ register:
+  permission: mineblock.register.cmd
+  description: Login - Register - Command
+  usage: /Register <Pasrword> <Password>
+ loginop:
+  permission: mineblock.loginop.cmd
+  description: Login - LoginOP - Command
+  usage: /LoginOP <View | UnRegister | Change> <PlayerName> 
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.login.cmd:
+    default: true
+    description: Login - Login - Command
+   mineblock.register.cmd:
+    default: true
+    description: Login - Register - Command
+   mineblock.loginop.cmd:
+    description: Login - LoginOP - Command

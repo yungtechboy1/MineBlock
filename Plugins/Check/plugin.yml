@@ -1,0 +1,20 @@
+name: Check
+main: MineBlock\Check\Check
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ check:
+  permission: mineblock.check.cmd
+  description: Check - Command
+  usage: /Check <Amount>
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.check.cmd:
+    default: true
+    description: Check - Command

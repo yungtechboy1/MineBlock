@@ -1,0 +1,19 @@
+name: FirstJoin
+main: MineBlock\FirstJoin\FirstJoin
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
+
+commands:
+ firstjoin:
+  permission: mineblock.firstjoin.cmd
+  description: FirstJoin - Command
+  usage: /FirstJoin <Spawn|Message>
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock - OP
+  children:
+   mineblock.firstjoin.cmd:
+    description: FirstJoin - Command

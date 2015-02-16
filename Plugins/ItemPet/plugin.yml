@@ -1,0 +1,5 @@
+name: ItemPet
+main: MineBlock\ItemPet\ItemPet
+version: MineBlock
+api: [1.6.0]
+author: MineBlock

@@ -1,0 +1,5 @@
+name: BlockPet
+main: MineBlock\BlockPet\BlockPet
+version: MineBlock
+api: [1.6.0]
+author: MineBlock

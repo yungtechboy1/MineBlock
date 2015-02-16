@@ -1,0 +1,5 @@
+name: MobPet
+main: MineBlock\MobPet\MobPet
+version: MineBlock
+api: [1.6.0]
+author: MineBlock

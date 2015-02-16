@@ -1,0 +1,27 @@
+name: Money
+main: MineBlock\Money\Money
+version: MineBlock
+api: [1.4.0]
+author: MineBlock
+
+commands:
+ money:
+  permission: mineblock.money.money.cmd
+  description: Money - Money - Command
+  usage: /Money <Me|View|Pay|Rank>
+  
+ moneyop:
+  permission: mineblock.money.moneyop.cmd
+  description: Money - MoneyOP - Command
+  usage: /MoneyOP <Set|Give|Take|Clear|Default|Nick|OP>
+
+permissions:
+ mineblock:
+  default: op
+  description: MineBlock
+  children:
+   mineblock.money.money.cmd:
+    default: true
+    description: Money - Money - Command
+   mineblock.money.moneyop.cmd:
+    description: Money - MoneyOP - Command

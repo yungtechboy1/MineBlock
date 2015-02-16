@@ -1,0 +1,5 @@
+name: FastBurn
+main: MineBlock\FastBurn\FastBurn
+version: MineBlock
+api: [1.6.0]
+author: MineBlock
